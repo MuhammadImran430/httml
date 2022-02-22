@@ -1,0 +1,174 @@
+.main{
+    height: 700px;
+    width: 120%;
+    position: relative;
+    background-image: url(road.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+
+}
+
+ .car1{
+    height: 250px;
+    width: 380px;
+    position: absolute;
+    background-image: url(car1.png);
+    background-size: 100% 100%;
+    top: 426px;
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 6s;
+    z-index: 1;
+}
+
+@keyframes car{
+     0%{
+right: 100%;
+    }
+
+    100%{
+right: 0%;
+    }
+}
+
+
+
+.tyre1{
+    height: 66px;
+    width: 66px;
+    background-image: url(tyre.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 129px;
+    left: 70px;
+    animation-name: trmov1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.30s;
+    z-index: 1;
+}
+
+@keyframes trmov1{
+    0%{
+transform: rotate(0deg);
+   }
+
+   100%{
+transform: rotate(-360deg);
+   }
+}
+
+
+.tyre1b{
+    height: 67px;
+    width: 67px;
+    background-image: url(tyre.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 129px;
+    left: 248px; 
+    animation-name: trmov2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.30s;
+}
+
+@keyframes trmov2{
+    0%{
+transform: rotate(0deg);
+   }
+
+   100%{
+transform: rotate(-360deg);
+   }
+}
+
+
+
+.car2{
+    height: 250px;
+    width: 380px;
+    position: absolute;
+    background-image: url(car2.png);
+    background-size: 100% 100%;
+    top: 500px;
+    /* left: 550px; */
+    transform: rotateY(180deg);
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    z-index: 1;
+}
+
+.tyre2{
+    height: 67px;
+    width: 67px;
+    background-image: url(tyre.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 123px;
+    left: 251px;
+    animation-name: trmov3;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.30s;
+}
+
+@keyframes trmov3{
+    0%{
+transform: rotate(0deg);
+   }
+
+   100%{
+transform: rotate(-360deg);
+   }
+}
+
+.tyre2b{
+    height: 67px;
+    width: 67px;
+    background-image: url(tyre.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 125px;
+    left: 73px;
+    animation-name: trmov4;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.30s;
+} 
+
+@keyframes trmov4{
+    0%{
+transform: rotate(0deg);
+   }
+
+   100%{
+transform: rotate(-360deg);
+   }
+}
+
+.plane{
+    height: 64px;
+    width: 150px;
+    background-image: url(plane.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 250px;
+    animation-name: plane;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+ @keyframes plane{ 
+    0%{
+right: 120%;
+    }
+   100%{
+right: -40%;
+   }
